@@ -91,6 +91,20 @@ print(f'O custo da regressão para w = {w} e b = {b} é de {initial_cost}.')
 
 # %%
 def gradient_descent(x, y, w, b, learning_rate = 0.01, n_iterations = 10000, min_error = 1e-6, min_update = 1e-6):
+    """ Esta função recria o processo de regressão linear simples/múltipla. Inicia parâmetros aleatórios de w e b, ficando
+    assim com uma linha de referência. Depois, através do conceito de cost function, o gradiente descendente vai atualizar
+    os parâmetros de w e b de forma a otimizar o modelo de regressão, até ao ponto em que alguma das condições de paragem
+    (número de passos, erro mínimo ou alterações entre iterações mínima) é atingida; É devolvido da função o valor final de w,
+    o valor final de b, e o histórico da função custo;
+
+    x = features/input
+    y = label/ouput
+    learning_rate = tamanho da atualização dos parâmetros no processo de gradiente descendente
+    n_iterations = número máximo de atualizações de w e b
+    min_error = threshold de cost function para o algoritmo parar
+    min_update = threshold de atualizações em w e b para o algoritmo parar
+    
+    """
 
     m = len(x)                                              # Número de data points
     cost = []
