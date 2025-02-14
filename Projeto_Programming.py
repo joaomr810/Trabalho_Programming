@@ -14,8 +14,6 @@ import matplotlib.pyplot as plt
 
 # %%
 def generate_dataset(n_points, dimensions = 2, mean = 5, std_dev = 2):
-    """
-    """
 
     points = np.random.normal(loc= mean, scale= std_dev, size= (n_points, dimensions))        # Gera n_points vetores com dimensions colunas
 
