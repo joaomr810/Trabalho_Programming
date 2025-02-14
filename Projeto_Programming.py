@@ -151,8 +151,6 @@ else:
 
 # %%
 def linear_regression(x, y, learning_rate = 0.01, n_iterations = 10000, min_error = 1e-6, min_update = 1e-6):
-    """ 
-    """
 
     def initial_lin_reg(x):
         if x.ndim == 1:                                         # Se tivermos apenas 1 variável independente
