@@ -11,9 +11,10 @@ O algoritmo de Regressão Linear é um método de aprendizagem supervisionada, c
 ## **Aplicação**
 
 
-![Gráfico regressão linear inicial](output1.png)
 
-![Gráfico regressão linear ótima](output2.png)
+
+
+![Gráfico Regressão Linear](output3.png)
 
 
 
