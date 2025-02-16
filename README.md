@@ -56,7 +56,7 @@ Analisando o gráfico, onde o eixo dos x representa as horas de estudo e o eixo 
 
 Uma vez definidos os parâmetros de w e b, é agora possível prever o output em casos futuros através da função predict_y:
 
-resultado = predict_y(14,w,b)
+    resultado = predict_y(14,w,b)
 
 Nesta aplicação em concreto, para um aluno que estude 14 horas, a regressão linear acima otimizada prevê que a nota no exame seja de 17.11 valores.
 
