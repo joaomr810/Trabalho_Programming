@@ -12,9 +12,9 @@ O algoritmo de Regressão Linear é um método de aprendizagem supervisionada, c
 
 O modelo de Regressão Linear pode ser definido pelas seguintes funções (dependendo se temos apenas 1 feature - simples -, ou mais do que 1 feature - múltipla):
 
-    Regressão Linear Simples : f_wb = w * x + b
+Regressão Linear Simples : f_wb = w * x + b
 
-    Regressão Linear Múltipla: f_wb = $\overrightarrow{w}$ . $\overrightarrow{x}$ + b
+Regressão Linear Múltipla: f_wb = $\overrightarrow{w}$ . $\overrightarrow{x}$ + b
 
 Neste projeto, a otimização dos parâmetros de w e b de maneira a encontrar a regressão que melhor se ajusta aos dados vai ser feita através de **Gradiente Descendente**, algoritmo bastante utilizado para encontrar o mínimo de qualquer função, especialmente quando as funções são convexas, uma vez que deixámos de ter o problema de ficar retidos em mínimos locais.
 
@@ -40,7 +40,7 @@ Assim sendo, a implementação de Regressão Linear através do Gradiente Descen
 
 ## **Aplicação prática do projeto**
 
-Para demonstrar a aplicabilidade do projeto, pedi ao ChatGPT que me fornecesse um dataset de 50 pontos de dados representativo das horas de estudo de 50 alunos para um determinado exame e das suas respetivas notas - variáveis horas_estudo e nota_exame. Utilizei apenas 1 feature (horas_estudo) de maneira a conseguirmos inspecionar graficamente a regressão. 
+Para demonstrar a aplicabilidade do projeto, pedi ao ChatGPT que me fornecesse um dataset de 50 pontos de dados representativo das horas de estudo de 50 alunos para um determinado exame e das suas respetivas notas - variáveis horas_estudo e nota_exame. Utilizei apenas 1 feature (horas_estudo) de maneira a conseguirmos inspecionar graficamente a regressão. O código e respetivo output desta aplicação do algoritmo encontram-se no final do documento script.ipynb.
 
 Através da aplicação da regressão linear construída em Projeto_Programming.py, vamos obter uma relação linear entre as variáveis horas_estudo e nota_exame, permitindo no futuro formar previsões da nota de um aluno no exame consoante as horas que estudou para o mesmo.
 
@@ -48,14 +48,10 @@ linear_regression(horas_estudo,nota_exame, learning_rate = 0.01, n_iterations = 
 
 ![Gráfico Regressão Linear](output3.png)
 
-Nes
+Através do presente gráfico, onde o eixo dos x representa as horas de estudo e o eixo dos y a nota do exame numa escala de 0 a 20, podemos observar graficamente o processo de otimização da Regressão Linear através das diferenças notadas pela linha de regressão a vermelho (regressão inicial com valores de w e b aleatórios) e a linha de regressão a verde (linha de regressão após o algoritmo convergir). 
 
 
 
-
-
-A representação inicial de y_hat = 0.754382512814484 x + 2.0747390242764743
-Paragem na iteração 11580 porque as alterações em w e b já não são maiores do que 1e-12.
 O ótimo da regressão está definido em y_hat = 0.9448042025017789 x + 3.878528693150314
 
 
