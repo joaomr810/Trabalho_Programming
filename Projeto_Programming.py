@@ -183,6 +183,8 @@ w, b, cost_history = linear_regression(horas_estudo,nota_exame, learning_rate = 
 
 # %%
 def predict_y(X, w, b):
+    """ Para prever outputs tendo a(s) feature(s) definidas e os parâmetros de w e b otimizados"""
+
     if isinstance(X, (int, float)):                             # Verifica se X é apenas 1 feature 
         result = w * X + b
     else:                                                       # Caso X seja uma lista (assim como w)
