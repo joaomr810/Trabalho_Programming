@@ -46,7 +46,7 @@ Através da aplicação da regressão linear construída em Projeto_Programming.
 
     w, b, cost_history = linear_regression(horas_estudo,nota_exame, learning_rate = 0.01, n_iterations = 20000, min_error = 1e-12, min_update = 1e-12)
 
-    ![Gráfico Regressão Linear](output3.png)
+![Gráfico Regressão Linear](output3.png)
 
 Através do presente gráfico, onde o eixo dos x representa as horas de estudo e o eixo dos y a nota do exame numa escala de 0 a 20, podemos observar graficamente o processo de otimização da Regressão Linear através das diferenças notadas pela linha de regressão a vermelho (regressão inicial com valores de w e b aleatórios) e a linha de regressão a verde (linha de regressão após o algoritmo convergir). 
 
@@ -56,7 +56,7 @@ Uma vez definidos os parâmetros de w e b, o utilizador pode agora
 
     w, b = (0.9448042025018154, 3.8785286931499257)
 
-    
+
 
 
 
