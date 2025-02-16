@@ -40,24 +40,23 @@ Assim sendo, a implementação de Regressão Linear através do Gradiente Descen
 
 ## **Aplicação prática do projeto**
 
-Para demonstrar a aplicabilidade do projeto, pedi ao ChatGPT que me fornecesse um dataset de 50 pontos de dados representativo das horas de estudo de 50 alunos para um determinado exame e das suas respetivas notas, que pode ser encontrado nas variáveis horas_estudo e nota_exame. De maneira a conseguirmos analisar graficamente a regressão, utilizarei apenas 1 feature (horas_estudo).
-
-horas_estudo = np.array([8,0.5,2,3.4,9,13,10,3.7,8,7.7,14,11,4.8,3.7,12,1.75,6,9,8,15,5,6,7,8,9,10,11,12,13,14,15,0.75,1.75,2.4,3.9,5.84,6.95,5,8.75,9,11.5,13,16,12.85,13,14,10.5,13,12.75,10])
-
-nota_exame = np.array([14,5,8,7.5,12,16,14,10,11,13,18,16,7.5,9,19,4.75,3.5,14,12.5,12,6,4.75,12,14,10,16.5,18,17,15.5,16,18,4.5,7,5,8,3.75,9,11,9.5,7.6,14.5,16,18.5,17.75,14.5,19,17,15.5,16,13])
+Para demonstrar a aplicabilidade do projeto, pedi ao ChatGPT que me fornecesse um dataset de 50 pontos de dados representativo das horas de estudo de 50 alunos para um determinado exame e das suas respetivas notas - variáveis horas_estudo e nota_exame. Utilizei apenas 1 feature (horas_estudo) de maneira a conseguirmos inspecionar graficamente a regressão. 
 
 Através da aplicação da regressão linear construída em Projeto_Programming.py, vamos obter uma relação linear entre as variáveis horas_estudo e nota_exame, permitindo no futuro formar previsões da nota de um aluno no exame consoante as horas que estudou para o mesmo.
 
-input: linear_regression(horas_estudo,nota_exame, learning_rate = 0.01, n_iterations = 20000, min_error = 1e-12, min_update = 1e-12)
+linear_regression(horas_estudo,nota_exame, learning_rate = 0.01, n_iterations = 20000, min_error = 1e-12, min_update = 1e-12)
 
-output:
+![Gráfico Regressão Linear](output3.png)
+
+Nes
+
+
+
+
+
 A representação inicial de y_hat = 0.754382512814484 x + 2.0747390242764743
 Paragem na iteração 11580 porque as alterações em w e b já não são maiores do que 1e-12.
 O ótimo da regressão está definido em y_hat = 0.9448042025017789 x + 3.878528693150314
-
-                ![Gráfico Regressão Linear](output3.png)
-
-Nes
 
 
 
